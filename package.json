@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "hypercore": "^10.37.25",
     "hyperdht": "^6.18.0",
     "hyperswarm": "^4.8.3"
   }

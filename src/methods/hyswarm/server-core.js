@@ -33,7 +33,7 @@ swarm.on('connection', (peer, info) => {
         console.log(info.publicKey.toString('hex').substring(0, 6), ':', data.toString());
         peer.write('Hello from the server! ' + counter);
 
-        core.append(data);
+        core.append(JSON.stringify({ counter, data: data.toString() }));
     });
 
     // Handle client disconnection gracefully

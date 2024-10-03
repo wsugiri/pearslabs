@@ -19,7 +19,7 @@
             require('../src/methods/hyperdht/client');
             break;
         case 'hyp-server':
-            require('../src/methods/hyswarm/server');
+            require('../src/methods/hyswarm/server-core');
             break;
         case 'hyp-client':
             require('../src/methods/hyswarm/client');

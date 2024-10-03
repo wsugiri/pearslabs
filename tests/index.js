@@ -24,6 +24,12 @@
         case 'hyp-client':
             require('../src/methods/hyswarm/client');
             break;
+        case 'core-basic':
+            await require('../src/methods/hycore/basic').start();
+            break;
+        case 'core-basic-read':
+            await require('../src/methods/hycore/basic_reader').start();
+            break;
         default:
             break;
     }

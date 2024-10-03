@@ -30,6 +30,12 @@
         case 'core-basic-read':
             await require('../src/methods/hycore/basic_reader').start();
             break;
+        case 'bee-basic':
+            await require('../src/methods/hypbee/basic').start();
+            break;
+        case 'bee-basic-read':
+            await require('../src/methods/hypbee/basic-reader').start();
+            break;
         default:
             break;
     }

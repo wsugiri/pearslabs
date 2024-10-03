@@ -17,7 +17,12 @@
             break;
         case 'dht-client':
             require('../src/methods/hyperdht/client');
-            require('../src/methods/hyperdht/client');
+            break;
+        case 'hyp-server':
+            require('../src/methods/hyswarm/server');
+            break;
+        case 'hyp-client':
+            require('../src/methods/hyswarm/client');
             break;
         default:
             break;
